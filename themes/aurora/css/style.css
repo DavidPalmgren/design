@@ -1,5 +1,5 @@
 body {
-    background-color: pink;
+    background-color: #0F0F0F;
 }
 
 * {
@@ -75,10 +75,14 @@ body {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #222;
+    border-bottom: 3px solid #222;
+    background-color: #222;
 }
-
+.footer p {
+    color:#F1F1F1;
+}
 .footer a {
-    color: #222;
+    color: rgb(39, 197, 224);
 }
 
 .footer .social {
@@ -90,7 +94,7 @@ body {
 body {
     font-family: sans-serif;
     line-height: 1.5rem;
-    color: #444;
+    color: #F1F1F1;
 }
 
 p, td, th, li, dd {
@@ -115,9 +119,9 @@ img {
 code {
     margin: 0 0.1em;
     padding: 0.1em 0.2em;
-    border: 1px solid #ccc;
+    border: 1px solid #5a5a5a;
     border-radius: 0.3em;
-    background: #f5f5f5;
+    background: #df8a8a;
     font-family: monospace;
     font-size: 0.85rem;
     line-height: 1.9824;
