@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -308,6 +309,19 @@ template {
   display: none;
 }
 
+html {
+  font-size: 100%;
+}
+
+p {
+  font-size: 1em;
+}
+
+@media (min-width: 64em) {
+  html {
+    font-size: 112.5%;
+  }
+}
 blockquote {
   font-style: italic;
   margin-left: 1em;
@@ -435,6 +449,9 @@ body {
 
 .main {
   flex: 1 0 auto;
+  max-width: 800px; /* gillar inte att texten tar upp hela skärmen så en stop-gap för just nu tills jag sätter upp main redigt*/
+  margin-left: auto; /* sätter min main i mitten av sidan för just nu */
+  margin-right: auto;
 }
 
 .header {
@@ -484,6 +501,7 @@ body {
 }
 
 /* Footer */
+/* nästlade lite av sakerna för just nu*/
 .footer {
   display: flex;
   justify-content: space-between;
@@ -509,6 +527,7 @@ body {
   color: #fff;
 }
 
+/* tog väck justify för det gjorde texten skum på mobileview? hoppas att jag hittar en bättre lösning? */
 p {
   overflow-wrap: break-word;
   word-wrap: break-word;

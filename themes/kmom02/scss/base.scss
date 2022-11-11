@@ -39,6 +39,9 @@ body {
 
 .main {
     flex: 1 0 auto;
+    max-width: 800px; /* gillar inte att texten tar upp hela skärmen så en stop-gap för just nu tills jag sätter upp main redigt*/
+    margin-left: auto; /* sätter min main i mitten av sidan för just nu */
+    margin-right: auto;
 }
 
 .header {
@@ -99,7 +102,7 @@ body {
 }
 
 /* Footer */
-
+/* nästlade lite av sakerna för just nu*/
 
 .footer {
     display: flex;
