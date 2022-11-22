@@ -33,7 +33,7 @@ För typografi så har använder dem sig av en H2 inom dem individuella sidorna 
 
 Bild
 -----------------------
-<a href="../assets/img/hitta.png"><img src="../assets/img/hitta.png" alt="marinmuseum" width="100%" height="350"></a>
+<div class="transparent"><a href="../assets/img/hitta.png"><img class="blend-overlay" src="../assets/img/hitta.png" alt="marinmuseum" width="100%" height="350"></a></div>
 
 Analys
 -----------------------

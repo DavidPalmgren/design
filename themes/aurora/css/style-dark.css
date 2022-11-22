@@ -642,6 +642,13 @@ img {
   max-width: 100%;
 }
 
+.transparent {
+  background-color: rgba(0, 92, 89, 0.3764705882);
+}
+.transparent .blend-overlay {
+  mix-blend-mode: overlay;
+}
+
 .wrapper {
   display: grid;
   margin: 0 auto;

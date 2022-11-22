@@ -226,3 +226,8 @@ h6 {
 img {
     max-width: 100%;
 }
+
+.transparent {
+    .blend-overlay{ mix-blend-mode: overlay; }
+    background-color: #005c5960;
+}

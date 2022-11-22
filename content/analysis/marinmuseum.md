@@ -34,7 +34,7 @@ Sidans färgtema är en bas blå med en mörkare blå som är lite mer åt grön
 
 Bild
 -----------------------
-<a href="../assets/img/marinmuseum.png"><img src="../assets/img/marinmuseum.png" alt="marinmuseum" width="100%" height="256"></a>
+<div class="transparent"><a href="../assets/img/marinmuseum.png"><img class="blend-overlay" src="../assets/img/marinmuseum.png" alt="marinmuseum" width="100%" height="256"></a></div>
 
 Analys
 -----------------------

@@ -33,7 +33,7 @@ När jag kollar på typrografin inom dem enskilda artiklarna så är det H1 som 
 
 Bild
 -----------------------
-<a href="../assets/img/blt.png"><img src="../assets/img/blt.png" alt="marinmuseum" width="100%" height="350"></a>
+<div class="transparent"><a href="../assets/img/blt.png"><img class="blend-overlay" src="../assets/img/blt.png" alt="marinmuseum" width="100%" height="350"></a></div>
 
 Analys
 -----------------------
