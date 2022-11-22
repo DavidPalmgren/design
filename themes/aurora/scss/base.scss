@@ -37,9 +37,21 @@ body {
     flex-direction: column;
 }
 
+.main2 {
+    max-width: 960px;
+    margin: 0 auto;
+    flex: 1 0 auto;
+    justify-content: center;
+    border: 1px solid $font-color;
+    text-align: center;
+    height: fit-content;
+}
+
 .main {
     flex: 1 0 auto;
     justify-content: center;
+    border: 1px solid $font-color;
+    height: fit-content;
 }
 
 .content {
@@ -105,16 +117,16 @@ body {
 }
 
 /* Footer */
-/* nästlade lite av sakerna för just nu*/
+/* nästlade lite av sakerna*/
 
 .footer {
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid $background-alternative-color;
-    border-bottom: 8px solid $background-alternative-color;
-    background-color: $background-alternative-color;
+    border-top: 1px solid $footer;
+    border-bottom: 8px solid $footer;
+    background-color: $footer;
     
     a {
         color: rgb(39, 197, 224);

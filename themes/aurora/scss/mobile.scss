@@ -3,7 +3,12 @@
     transition: height 0.5s ease-in !important;
 }
 
+.nav ul li a {
+    color: $font-color;
+}
+
 .nav ul {
+    background-color: $nav;
     display: flex;
     justify-content: flex-end;
     padding: 1em 0;
@@ -12,6 +17,10 @@
 
 .nav ul li {
     padding: 0 1em;
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.205);
 }
 
 .nav a .nav-toggle {

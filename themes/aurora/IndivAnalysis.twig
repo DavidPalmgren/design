@@ -1,0 +1,22 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+    <div class="two-col-layout">
+        <div class="main" role="main">
+            {{ content }}
+        </div>
+        <div class="aside">
+            <div><p id="bottom">Technology</p></div>
+            <div><a href="blt">BLT</a></div>
+            <div><a href="marinmuseum">Marinmuseum</a></div>
+            <div><a href="hitta">Hitta</a></div>
+            <div><a href="slutsats">Slutsats</a></div>
+        </div>
+
+    </div>
+
+    {% include 'incl/footer.twig' %}
+    </body>
+
+</html>

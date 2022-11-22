@@ -7,14 +7,14 @@ code {
     font-family: monospace;
     font-size: 0.85rem;
     line-height: 1.9824;
-    color: rgb(7, 7, 7);
+    color: $font-alternative-color;
 }
 
 pre {
     padding: 0 1em;
     border: 1px solid $eggshell-border;
     border-radius: 0.3em;
-    background: $font-color;
+    background: $code-background;
 }
 
 pre code {
