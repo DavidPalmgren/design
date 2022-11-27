@@ -11,6 +11,35 @@
     padding: 50px 0;
 }
 
+
+.two-col-layout {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.two-col-layout > .main {
+    width: calc(100% / 16 * 12); /* 12/16 width */
+}
+
+.two-col-layout > .aside {
+    width: calc(100% / 16 * 4); /* 4/16 width */
+}
+
+.aside {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 24px;
+    background-color: $side;
+
+    a:hover {
+        background-color: rgba(0, 0, 0, 0.205);
+    }
+}
+
 .techs {
     padding: 50px 0;
     justify-self: center;
@@ -66,60 +95,3 @@
     grid-row: 5 / 6;
     background-color: rgb(151, 213, 255);
 }
-
-.two-col-layout {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.two-col-layout > .main {
-    width: calc(100% / 16 * 12); /* 12/16 width */
-}
-
-.two-col-layout > .aside {
-    width: calc(100% / 16 * 4); /* 4/16 width */
-}
-
-.aside {
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 24px;
-    background-color: $side;
-
-    a:hover {
-        background-color: rgba(0, 0, 0, 0.205);
-    }
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-// edit this tmrw
-@media screen and (max-width: 768px) {
-    .aside {
-        display: none;
-    }
-
-    .footer {
-        display: none;
-    }
-
-    .wrapper {
-        display: block;
-    }
-}
-
-.footer {
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    width:100%;
- }
- 
- /* IE 6 */

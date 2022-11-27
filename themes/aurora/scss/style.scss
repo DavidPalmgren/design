@@ -4,9 +4,10 @@
 @import 'typography';
 @import 'blockquotes';
 @import 'code';
-@import 'mobile';
+
 @import 'base';
 @import 'grid';
+@import 'mobile';
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';

@@ -31,7 +31,7 @@ a:hover {
     display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .header {
         flex-direction: column;
     }
@@ -61,5 +61,20 @@ a:hover {
         line-height: 2em;
         text-align: center;
         cursor: pointer;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+// edit this tmrw
+@media (max-width: 768px) {
+    .aside {
+        display: none;
+    }
+
+    .wrapper {
+        display: block;
     }
 }

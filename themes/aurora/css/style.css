@@ -328,12 +328,12 @@ body {
 
 p {
   font-size: 1.25em;
-  margin-bottom: 1.75rem; /* 1.4 * 1.25em vår baseline...... detta är lite stort med dessa just nu ska nog justera detta framöver kom ihåg note affektar min footer också? look into later */
+  margin-bottom: 1.75rem;
 }
 
 h1 {
   font-size: 2.8em;
-  margin-bottom: 3.5rem; /* baseline * 2, för att skapa mer utrymme */
+  margin-bottom: 3.5rem;
 }
 
 blockquote {
@@ -372,69 +372,14 @@ pre code {
   line-height: 1.4;
 }
 
-.slide {
-  overflow-y: hidden !important;
-  transition: height 0.5s ease-in !important;
-}
-
-.nav ul li a {
-  color: #fff;
-}
-
-.nav ul {
-  background-color: #00DBD2;
-  display: flex;
-  justify-content: flex-end;
-  padding: 1em 0;
-  list-style: none;
-}
-
-.nav ul li {
-  padding: 0 1em;
-}
-
-a:hover {
-  background-color: rgba(0, 0, 0, 0.205);
-}
-
-.nav a .nav-toggle {
-  color: #fff;
-}
-
-.nav-toggle {
-  display: none;
-}
-
-@media (max-width: 767px) {
-  .header {
-    flex-direction: column;
-  }
-  .nav ul {
-    flex-direction: column;
-    padding-bottom: 1em;
-  }
-  .nav ul li {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .nav ul li a {
-    display: block;
-    padding: 0.5em 0;
-  }
-  .js .nav-toggle {
-    display: block;
-    float: right;
-    width: 2em;
-    margin: 0.6667em 0;
-    font-size: 1.5rem;
-    line-height: 2em;
-    text-align: center;
-    cursor: pointer;
-  }
-}
 body {
   background-color: #0f0f0f;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  line-height: 1.5rem;
+  color: #fff;
 }
 
 * {
@@ -458,16 +403,6 @@ ul {
 
 html {
   height: 100%;
-}
-
-body {
-  height: 100%;
-}
-
-/* Placement */
-body {
-  display: flex;
-  flex-direction: column;
 }
 
 .main2 {
@@ -494,14 +429,6 @@ body {
 
 .header {
   flex: 0 0 auto;
-}
-
-.footer {
-  flex: 0 0 auto;
-}
-
-/* Header */
-.header {
   display: flex;
   justify-content: space-between;
 }
@@ -522,32 +449,26 @@ body {
   }
   .title {
     min-width: 50%;
+    color: #fff;
   }
   .logo {
     max-width: 30%;
   }
   p {
     word-spacing: -1px;
+    font-style: italic;
   }
 }
-.title * {
-  color: #fff;
-}
-
-.title p {
-  font-style: italic;
-}
-
-/* Footer */
-/* nästlade lite av sakerna*/
 .footer {
-  bottom: 0;
+  flex: 0 0 auto;
   width: 100%;
   display: flex;
+  position: relative;
   justify-content: space-between;
   border-top: 1px solid #005C59;
   border-bottom: 8px solid #005C59;
   background-color: #005C59;
+  margin: auto;
 }
 .footer a {
   color: rgb(39, 197, 224);
@@ -561,12 +482,6 @@ body {
 }
 
 /* Typografy */
-body {
-  font-family: sans-serif;
-  line-height: 1.5rem;
-  color: #fff;
-}
-
 /* tog väck justify för det gjorde texten skum på mobileview? hoppas att jag hittar en bättre lösning? */
 p {
   overflow-wrap: break-word;
@@ -661,6 +576,33 @@ img {
   padding: 50px 0;
 }
 
+.two-col-layout {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.two-col-layout > .main {
+  width: 75%; /* 12/16 width */
+}
+
+.two-col-layout > .aside {
+  width: 25%; /* 4/16 width */
+}
+
+.aside {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 24px;
+  background-color: #00A8A3;
+}
+.aside a:hover {
+  background-color: rgba(0, 0, 0, 0.205);
+}
+
 .techs {
   padding: 50px 0;
   justify-self: center;
@@ -717,34 +659,67 @@ img {
   background-color: rgb(151, 213, 255);
 }
 
-.two-col-layout {
-  position: relative;
-  min-height: 100vh;
+.slide {
+  overflow-y: hidden !important;
+  transition: height 0.5s ease-in !important;
+}
+
+.nav ul li a {
+  color: #fff;
+}
+
+.nav ul {
+  background-color: #00DBD2;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 960px;
-  margin: 0 auto;
+  justify-content: flex-end;
+  padding: 1em 0;
+  list-style: none;
 }
 
-.two-col-layout > .main {
-  width: 75%; /* 12/16 width */
+.nav ul li {
+  padding: 0 1em;
 }
 
-.two-col-layout > .aside {
-  width: 25%; /* 4/16 width */
-}
-
-.aside {
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 24px;
-  background-color: #00A8A3;
-}
-.aside a:hover {
+a:hover {
   background-color: rgba(0, 0, 0, 0.205);
 }
 
+.nav a .nav-toggle {
+  color: #fff;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+  }
+  .nav ul {
+    flex-direction: column;
+    padding-bottom: 1em;
+  }
+  .nav ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav ul li a {
+    display: block;
+    padding: 0.5em 0;
+  }
+  .js .nav-toggle {
+    display: block;
+    float: right;
+    width: 2em;
+    margin: 0.6667em 0;
+    font-size: 1.5rem;
+    line-height: 2em;
+    text-align: center;
+    cursor: pointer;
+  }
+}
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -753,25 +728,14 @@ img {
     font-size: 18px;
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .aside {
-    display: none;
-  }
-  .footer {
     display: none;
   }
   .wrapper {
     display: block;
   }
 }
-.footer {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
-}
-
-/* IE 6 */
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
