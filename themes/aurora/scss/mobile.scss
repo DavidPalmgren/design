@@ -78,3 +78,35 @@ a:hover {
         display: block;
     }
 }
+
+@media (max-width: 768px) {
+    .grid-container { grid-template-columns: repeat(1, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .title {
+        .logo {
+            padding: 1em 1em 1em 0;
+        }
+    }
+
+    .title {
+        min-width: 50%;
+        color: $font-color;
+        
+    }
+
+    .logo {
+        max-width: 30%;
+    }
+
+    p {
+        word-spacing: -1px;
+        font-style: italic;
+    }
+
+    .scale1 {
+        width: 700px;
+        height: 700px;
+    }
+}

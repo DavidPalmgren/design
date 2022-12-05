@@ -309,6 +309,45 @@ template {
   display: none;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+embed {
+  max-width: 100%;
+}
+
+object {
+  max-width: 100%;
+}
+
+video {
+  max-width: 100%;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 html {
   font-size: 100%;
 }
@@ -443,31 +482,15 @@ html {
   padding: 3em 3em 3em 0;
 }
 
-@media (max-width: 767px) {
-  .title .logo {
-    padding: 1em 1em 1em 0;
-  }
-  .title {
-    min-width: 50%;
-    color: #fff;
-  }
-  .logo {
-    max-width: 30%;
-  }
-  p {
-    word-spacing: -1px;
-    font-style: italic;
-  }
-}
 .footer {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
   position: relative;
   justify-content: space-between;
-  border-top: 1px solid #005C59;
-  border-bottom: 8px solid #005C59;
-  background-color: #005C59;
+  border-top: 1px solid #005c59;
+  border-bottom: 8px solid #005c59;
+  background-color: #005c59;
   margin: auto;
 }
 .footer a {
@@ -564,6 +587,10 @@ img {
   mix-blend-mode: overlay;
 }
 
+.width90 {
+  width: 90%;
+}
+
 .wrapper {
   display: grid;
   margin: 0 auto;
@@ -585,6 +612,25 @@ img {
   margin: 0 auto;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #0f0f0f;
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.grid-item {
+  background-color: #00dbd2;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  height: 90%;
+  width: 100%;
+  text-align: center;
+}
+
 .two-col-layout > .main {
   width: 75%; /* 12/16 width */
 }
@@ -597,7 +643,7 @@ img {
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 24px;
-  background-color: #00A8A3;
+  background-color: #00a8a3;
 }
 .aside a:hover {
   background-color: rgba(0, 0, 0, 0.205);
@@ -669,7 +715,7 @@ img {
 }
 
 .nav ul {
-  background-color: #00DBD2;
+  background-color: #00dbd2;
   display: flex;
   justify-content: flex-end;
   padding: 1em 0;
@@ -692,7 +738,7 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header {
     flex-direction: column;
   }
@@ -734,6 +780,31 @@ a:hover {
   }
   .wrapper {
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .title .logo {
+    padding: 1em 1em 1em 0;
+  }
+  .title {
+    min-width: 50%;
+    color: #fff;
+  }
+  .logo {
+    max-width: 30%;
+  }
+  p {
+    word-spacing: -1px;
+    font-style: italic;
+  }
+  .scale1 {
+    width: 700px;
+    height: 700px;
   }
 }
 /*!

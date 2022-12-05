@@ -72,29 +72,6 @@ html {
     }
 }
 
-@media (max-width: 767px) {
-    .title {
-        .logo {
-            padding: 1em 1em 1em 0;
-        }
-    }
-
-    .title {
-        min-width: 50%;
-        color: $font-color;
-        
-    }
-
-    .logo {
-        max-width: 30%;
-    }
-
-    p {
-        word-spacing: -1px;
-        font-style: italic;
-    }
-}
-
 .footer {
     flex: 0 0 auto;
     width: 100%;
@@ -209,4 +186,8 @@ img {
     }
 
     
+}
+
+.width90 {
+    width: 90%;
 }

@@ -21,6 +21,25 @@
     margin: 0 auto;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: $background-color;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: $nav;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    height: 90%;
+    width: 100%;
+    text-align: center;
+}
+
 .two-col-layout > .main {
     width: calc(100% / 16 * 12); /* 12/16 width */
 }

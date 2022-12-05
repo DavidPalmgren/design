@@ -8,4 +8,4 @@ Template: Technology
 <div class="css"><a href="analysis/blt">BLT</a></div>
 <div class="javascript"><a href="analysis/hitta">Hitta</a></div>
 <div class="php"><a href="analysis/slutsats">Slutsats</a></div>
-
+<div class="python"><a href="analysis/02_load">load</a></div>
