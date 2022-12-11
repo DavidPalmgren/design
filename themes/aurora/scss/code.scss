@@ -3,18 +3,18 @@ code {
     padding: 0.1em 0.2em;
     border: 1px solid $eggshell-border;
     border-radius: 0.3em;
-    background: $code-background;
+    background: $nav;
     font-family: monospace;
     font-size: 0.85rem;
     line-height: 1.9824;
-    color: $font-alternative-color;
+    color: $background-color;
 }
 
 pre {
     padding: 0 1em;
     border: 1px solid $eggshell-border;
     border-radius: 0.3em;
-    background: $code-background;
+    background: $nav;
 }
 
 pre code {

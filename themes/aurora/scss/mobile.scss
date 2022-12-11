@@ -20,11 +20,11 @@
 }
 
 a:hover {
-    background-color: rgba(0, 0, 0, 0.205);
+    background-color: #892cdc;
 }
 
 .nav a .nav-toggle {
-    color: $font-color;
+    color: $background-color;
 }
 
 .nav-toggle {
@@ -92,7 +92,7 @@ a:hover {
 
     .title {
         min-width: 50%;
-        color: $font-color;
+        color: $background-color;
         
     }
 

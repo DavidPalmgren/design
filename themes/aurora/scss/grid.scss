@@ -70,47 +70,47 @@
     padding: 50px 0;
     grid-column: 1 / 1;
     grid-row: 2 / 2;
-    background-color: rgb(155, 127, 255);
+    background-color: $nav;
 }
 
 .html {
     padding: 50px 0;
     grid-column: 2 / 4;
     grid-row: 2 / 2;
-    background-color: #7fffd4;
+    background-color: $nav;
 }
 
 .javascript {
     padding: 50px 0;
     grid-column: 1 / 3;
     grid-row: 3 / 3;
-    background-color: rgb(208, 127, 255);
+    background-color: $nav;
 }
 
 .php {
     padding: 50px 0;
     grid-column: 3 / 4;
     grid-row: 3 / 3;
-    background-color: rgb(127, 255, 127);
+    background-color: $nav;
 }
 
 .python {
     padding: 50px 0;
     grid-column: 1 / 4;
     grid-row: 4 / 4;
-    background-color: rgb(0, 153, 255);
+    background-color: $nav;
 }
 
 .git {
     padding: 50px 0;
     grid-column: 1 / 1;
     grid-row: 5 / 6;
-    background-color: rgb(255, 0, 21);
+    background-color: $nav;
 }
 
 .sqlite {
     padding: 50px 0;
     grid-column: 2 / 4;
     grid-row: 5 / 6;
-    background-color: rgb(151, 213, 255);
+    background-color: $nav;
 }
