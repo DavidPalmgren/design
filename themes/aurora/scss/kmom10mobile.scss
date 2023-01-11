@@ -1,0 +1,34 @@
+@media (max-width: 768px) {
+    .profilepic {
+        float: none;
+        margin-right: 0px;
+    }
+    .main4 {
+        margin-top: 0px;
+    }
+    .grid-container2 {
+        display: block;
+    }
+    .grid-container3 {
+        display: block;
+    }
+    .grid-item2 {
+        margin: 0px;
+        
+    }
+    .body4 {
+        background: black;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../../../assets/img/hero2mobile.jpg);
+        background-position: center;
+    }
+    .body2 {
+        background: black;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../../../assets/img/hero2mobile.jpg);
+        background-position: center;
+    }
+    .body3 {
+        background: black;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../../../assets/img/hero2mobile.jpg);
+        background-position: center;
+    }
+}

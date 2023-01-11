@@ -1,15 +1,19 @@
 ---
-Title: Om-sida
+Title: About
 Description: En sida om design
+Template: kmom10about
 ---
 
-Om design
-==================
-
-Vi jobbar på med design och vi har fått lära oss utav många nya tekniker, packet och annat som jag tänkte berätta om lite kort här
-
-En sådan teknink är markdown som t.ex. denna sidan är skriven på det är ett enkelt lite mer skriv vänligt sätt kanske där allt tolkas på typ människo språk ist för att vara omsluten av p taggar och sådant.
-
-Vi skriver nu även css som scss istället då det gör det möjligt av oss att använda variabler, operatorer och mer för att förenkla vårt arbete.
 
 
+
+
+<img class="profilepic" src="%base_url%/image/Ivpo.jpg?w=250&h=250&crop-to-fit&area=0,0,5,0" alt="profile">
+
+
+<p>
+Introducing John Cenatra, a highly skilled and experienced web developer with over 5 years of industry experience. John specializes in building custom, responsive websites and web applications using the latest technologies and frameworks, such as React and Node.js.</p>
+<p>
+ He has a keen eye for design and user experience, and is able to translate clients' unique needs into fully functional and visually stunning digital products.</p>
+
+<p><a href="hiddenpage">tema</a></p>

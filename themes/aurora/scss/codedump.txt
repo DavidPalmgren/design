@@ -1,0 +1,21 @@
+    .body3 {
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../../assets/img/hero2mobile.jpg);
+        background-position: center;
+        width: 100%;
+        height: 100%;
+    }
+    .body2 {
+        background: url(../../../assets/img/hero2mobile.jpg);
+        background-position: center;
+    }
+
+
+    <div class="grid-container2" style="float: right;">
+    <div class="grid-item2"><a href="%base_url%/image/figma1.png"><img src="%base_url%/image/figma1.png?w=600"></a></div>
+    <div class="grid-item2"><a href="%base_url%/image/figma4.1.png"><img src="%base_url%/image/figma4.1.png?w=600"></a></div>
+    <div class="grid-item2"><a href="%base_url%/image/figma2.png"><img src="%base_url%/image/figma2.png?w=600"></a></div>
+</div>
+<div class="grid-container3" style="float: right;">
+    <div class="grid-item2"><a href="%base_url%/image/figma5.png"><img src="%base_url%/image/figma5.png?w=600"></a></div>
+    <div class="grid-item2"><a href="%base_url%/image/figma6.1.png"><img src="%base_url%/image/figma6.1.png?w=600"></a></div>
+</div>
